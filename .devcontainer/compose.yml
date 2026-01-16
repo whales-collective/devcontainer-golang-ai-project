@@ -1,0 +1,14 @@
+services:
+
+  golang-ai-workspace:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - GO_VERSION=1.25.5
+        - USER_NAME=${USER}
+    network_mode: "host" 
+    volumes:
+      - ../..:/workspaces:cached      
+    command: sleep infinity
+
