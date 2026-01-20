@@ -9,5 +9,5 @@ services:
         model_var: MODEL_RUNNER_CHAT_MODEL
 
 models:
-  chat-agen:
+  chat-agent:
     model: hf.co/menlo/jan-nano-gguf:q4_k_m
