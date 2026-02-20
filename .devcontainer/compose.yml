@@ -9,6 +9,6 @@ services:
         - USER_NAME=${USER}
     network_mode: "host" 
     volumes:
-      - ../..:/workspaces:cached      
+      - ..:/workspaces:cached      
     command: sleep infinity
 
